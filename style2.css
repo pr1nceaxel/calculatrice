@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('calcul.jpg') center center fixed; /* Remplacez par le chemin de votre image */
+
+}
+
+#calculatrice {
+    width: 350px;
+    padding: 20px;
+    background-color: rgb(155, 154, 154);
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    overflow: hidden;
+}
+
+.affichage-part1,
+.affichage-part2 {
+    background-color: #000000;
+    color: white;
+    padding: 30px 10px 20px 10px;
+    border: 10px;
+    margin-top: -15px;
+    text-align: right;
+    font-size: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end; /* Aligner le contenu à droite */
+    border-radius: 10px;
+
+}
+
+.bouton {
+    width: 70px;
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s  ,   transform 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+.bouton:hover {
+    background-color: #45a049 ;
+    transform: scale(1.1) translateZ(50px);
+}
+
+.bouton:active{
+    background-color: gray;
+}
+
+
+#operation,
+#resultat {
+    white-space: nowrap; /* Empêcher le saut à la ligne */
+
+}
+
+.ecran{
+    background-color: black;
+    margin-top: 50px;
+    border-radius:20px;
+}
+
+
+#sup:hover,
+#sup1:hover{
+    
+    background-color: red;
+}
+
+#resultat.infini{
+    color: red;
+}
+
+#resultat.negative-infini{
+    color: red;
+}
+
+#resultat.erreur {
+    color: red;
+}
